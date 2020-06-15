@@ -30,15 +30,18 @@ namespace ClockApp
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            MessageBox.Show("Form 클로즈 시 발생");
+            if (MessageBox.Show("진짜 닫을래?", "경고",
+                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                e.Cancel = false; // 취소를 안시켜서 종료
+            }
+            else
+            {
+                e.Cancel = true; // 취소시키니까 종료 안됨
+            }
         }
 
-        private void Form1_Activated(object sender, EventArgs e) // 폼 클로징은 닫기 버튼 눌렀을 때, 폼 클로즈드는 아예 꺼지고 나서
-        {
-            MessageBox.Show("Form 활성화 시 발생");
-        }
-
-        private void ㄴ(object sender, EventArgs e)
+        private void (object sender, EventArgs e)
         {
 
         }
