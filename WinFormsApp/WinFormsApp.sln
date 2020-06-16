@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckboxTestApp", "CheckboxTestApp\CheckboxTestApp.csproj", "{560690AC-1885-41B1-A3E4-9F5D36F0E7A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadiobuttonTestApp", "RadiobuttonTestApp\RadiobuttonTestApp.csproj", "{2CC8A452-D290-4490-8BD1-367EB7723EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginApp", "LoginApp\LoginApp.csproj", "{582C2768-3A59-4228-B570-B902FD76710C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{560690AC-1885-41B1-A3E4-9F5D36F0E7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{560690AC-1885-41B1-A3E4-9F5D36F0E7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{560690AC-1885-41B1-A3E4-9F5D36F0E7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CC8A452-D290-4490-8BD1-367EB7723EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC8A452-D290-4490-8BD1-367EB7723EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC8A452-D290-4490-8BD1-367EB7723EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CC8A452-D290-4490-8BD1-367EB7723EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582C2768-3A59-4228-B570-B902FD76710C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582C2768-3A59-4228-B570-B902FD76710C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582C2768-3A59-4228-B570-B902FD76710C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582C2768-3A59-4228-B570-B902FD76710C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

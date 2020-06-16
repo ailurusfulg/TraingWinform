@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -43,6 +43,7 @@
             this.bNum = new System.Windows.Forms.Button();
             this.bDot = new System.Windows.Forms.Button();
             this.bSign = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bNum1
@@ -72,6 +73,7 @@
             this.bClear.TabIndex = 0;
             this.bClear.Text = "C";
             this.bClear.UseVisualStyleBackColor = true;
+            this.bClear.Click += new System.EventHandler(this.bClear_Click);
             // 
             // bNum5
             // 
@@ -182,11 +184,24 @@
             this.bSign.UseVisualStyleBackColor = true;
             this.bSign.Click += new System.EventHandler(this.bNum1_Click);
             // 
-            // Form1
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Font = new System.Drawing.Font("굴림", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(11, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(338, 72);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "0";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(361, 482);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bNum6);
             this.Controls.Add(this.bPlu);
             this.Controls.Add(this.bMin);
@@ -202,8 +217,8 @@
             this.Controls.Add(this.bNum3);
             this.Controls.Add(this.bSign);
             this.Controls.Add(this.bNum1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Calculator";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
 
         }
@@ -225,6 +240,7 @@
         private System.Windows.Forms.Button bNum;
         private System.Windows.Forms.Button bDot;
         private System.Windows.Forms.Button bSign;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -10,16 +10,29 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
-        public Form1()
+        
+        int x = 0;
+        
+
+        public Calculator()
         {
             InitializeComponent();
+        }
+        private void bClear_Click(object sender, EventArgs e)
+        {
+            int x = 0;
         }
 
         private void bNum1_Click(object sender, EventArgs e)
         {
+            x = 1;
+        }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.Text = bNum1.x.ToString();
         }
     }
 }
