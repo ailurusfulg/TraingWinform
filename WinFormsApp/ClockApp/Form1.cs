@@ -41,9 +41,6 @@ namespace ClockApp
             }
         }
 
-        private void (object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

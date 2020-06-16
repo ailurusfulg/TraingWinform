@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{47958B05-3787-4117-A7B6-3569956932B8}</ProjectGuid>
+    <ProjectGuid>{001A5BC5-2D92-4A83-9F8E-964905F04BE1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ButtonTestApp</RootNamespace>
-    <AssemblyName>ButtonTestApp</AssemblyName>
+    <RootNamespace>Calculator</RootNamespace>
+    <AssemblyName>Calculator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

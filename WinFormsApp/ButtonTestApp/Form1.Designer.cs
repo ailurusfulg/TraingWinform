@@ -28,84 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Flat = new System.Windows.Forms.Button();
-            this.Popup = new System.Windows.Forms.Button();
-            this.Standard = new System.Windows.Forms.Button();
-            this.System = new System.Windows.Forms.Button();
+            this.bFlat = new System.Windows.Forms.Button();
+            this.bPopup = new System.Windows.Forms.Button();
+            this.bStandard = new System.Windows.Forms.Button();
+            this.bSystem = new System.Windows.Forms.Button();
+            this.LblButtonStyle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Flat
+            // bFlat
             // 
-            this.Flat.BackColor = System.Drawing.Color.Crimson;
-            this.Flat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Flat.Font = new System.Drawing.Font("나눔고딕코딩", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Flat.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Flat.Location = new System.Drawing.Point(152, 126);
-            this.Flat.Name = "Flat";
-            this.Flat.Size = new System.Drawing.Size(135, 76);
-            this.Flat.TabIndex = 0;
-            this.Flat.Text = "Flat";
-            this.Flat.UseVisualStyleBackColor = false;
+            this.bFlat.AutoSize = true;
+            this.bFlat.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bFlat.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bFlat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bFlat.Font = new System.Drawing.Font("나눔고딕코딩", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.bFlat.Location = new System.Drawing.Point(58, 60);
+            this.bFlat.Name = "bFlat";
+            this.bFlat.Size = new System.Drawing.Size(195, 103);
+            this.bFlat.TabIndex = 0;
+            this.bFlat.Text = "Flat";
+            this.bFlat.UseVisualStyleBackColor = false;
+            this.bFlat.Click += new System.EventHandler(this.Flat_Click);
             // 
-            // Popup
+            // bPopup
             // 
-            this.Popup.BackColor = System.Drawing.Color.Crimson;
-            this.Popup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Popup.Font = new System.Drawing.Font("나눔고딕코딩", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Popup.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Popup.Location = new System.Drawing.Point(405, 126);
-            this.Popup.Name = "Popup";
-            this.Popup.Size = new System.Drawing.Size(135, 76);
-            this.Popup.TabIndex = 0;
-            this.Popup.Text = "Popup";
-            this.Popup.UseVisualStyleBackColor = false;
+            this.bPopup.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bPopup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bPopup.Font = new System.Drawing.Font("나눔고딕코딩", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.bPopup.Location = new System.Drawing.Point(368, 60);
+            this.bPopup.Name = "bPopup";
+            this.bPopup.Size = new System.Drawing.Size(195, 103);
+            this.bPopup.TabIndex = 1;
+            this.bPopup.Text = "Popup";
+            this.bPopup.UseVisualStyleBackColor = false;
+            this.bPopup.Click += new System.EventHandler(this.Popup_Click);
             // 
-            // Standard
+            // bStandard
             // 
-            this.Standard.BackColor = System.Drawing.Color.Crimson;
-            this.Standard.Font = new System.Drawing.Font("나눔고딕코딩", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Standard.ForeColor = System.Drawing.Color.Cornsilk;
-            this.Standard.Location = new System.Drawing.Point(152, 248);
-            this.Standard.Name = "Standard";
-            this.Standard.Size = new System.Drawing.Size(135, 76);
-            this.Standard.TabIndex = 0;
-            this.Standard.Text = "Standard";
-            this.Standard.UseVisualStyleBackColor = false;
+            this.bStandard.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bStandard.Font = new System.Drawing.Font("나눔고딕코딩", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.bStandard.Location = new System.Drawing.Point(58, 223);
+            this.bStandard.Name = "bStandard";
+            this.bStandard.Size = new System.Drawing.Size(195, 103);
+            this.bStandard.TabIndex = 2;
+            this.bStandard.Text = "Standard";
+            this.bStandard.UseVisualStyleBackColor = false;
+            this.bStandard.Click += new System.EventHandler(this.Standard_Click);
             // 
-            // System
+            // bSystem
             // 
-            this.System.BackColor = System.Drawing.Color.Crimson;
-            this.System.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.System.Font = new System.Drawing.Font("나눔고딕코딩", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.System.ForeColor = System.Drawing.Color.Cornsilk;
-            this.System.Location = new System.Drawing.Point(405, 248);
-            this.System.Name = "System";
-            this.System.Size = new System.Drawing.Size(135, 76);
-            this.System.TabIndex = 0;
-            this.System.Text = "System";
-            this.System.UseVisualStyleBackColor = false;
+            this.bSystem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bSystem.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bSystem.Font = new System.Drawing.Font("나눔고딕코딩", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.bSystem.Location = new System.Drawing.Point(368, 223);
+            this.bSystem.Name = "bSystem";
+            this.bSystem.Size = new System.Drawing.Size(195, 103);
+            this.bSystem.TabIndex = 3;
+            this.bSystem.Text = "System";
+            this.bSystem.UseVisualStyleBackColor = false;
+            this.bSystem.Click += new System.EventHandler(this.System_Click);
+            // 
+            // LblButtonStyle
+            // 
+            this.LblButtonStyle.AutoSize = true;
+            this.LblButtonStyle.Location = new System.Drawing.Point(33, 376);
+            this.LblButtonStyle.Name = "LblButtonStyle";
+            this.LblButtonStyle.Size = new System.Drawing.Size(45, 15);
+            this.LblButtonStyle.TabIndex = 1;
+            this.LblButtonStyle.Text = "label1";
+            this.LblButtonStyle.Click += new System.EventHandler(this.LblButtonStyle_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.System);
-            this.Controls.Add(this.Popup);
-            this.Controls.Add(this.Standard);
-            this.Controls.Add(this.Flat);
+            this.Controls.Add(this.LblButtonStyle);
+            this.Controls.Add(this.bSystem);
+            this.Controls.Add(this.bStandard);
+            this.Controls.Add(this.bPopup);
+            this.Controls.Add(this.bFlat);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.LblButtonStyle_Click);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Flat;
-        private System.Windows.Forms.Button Popup;
-        private System.Windows.Forms.Button Standard;
-        private System.Windows.Forms.Button System;
+        private System.Windows.Forms.Button bFlat;
+        private System.Windows.Forms.Button bPopup;
+        private System.Windows.Forms.Button bStandard;
+        private System.Windows.Forms.Button bSystem;
+        private System.Windows.Forms.Label LblButtonStyle;
     }
 }
 

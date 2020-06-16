@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{47958B05-3787-4117-A7B6-3569956932B8}</ProjectGuid>
+    <ProjectGuid>{93E50355-D693-4E2C-8FFB-69C70B0B1280}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ButtonTestApp</RootNamespace>
-    <AssemblyName>ButtonTestApp</AssemblyName>
+    <RootNamespace>Calculatro</RootNamespace>
+    <AssemblyName>Calculatro</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
