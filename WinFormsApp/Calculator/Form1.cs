@@ -27,12 +27,12 @@ namespace Calculator
 
         private void bNum1_Click(object sender, EventArgs e)
         {
-            x = 1;
+            label1.Text = (x + 1).ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            label1.Text = bNum1.x.ToString();
+            label1.Text = x.ToString();
         }
     }
 }
