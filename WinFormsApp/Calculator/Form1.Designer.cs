@@ -97,6 +97,7 @@
             this.bMul.TabIndex = 0;
             this.bMul.Text = "*";
             this.bMul.UseVisualStyleBackColor = true;
+            this.bMul.Click += new System.EventHandler(this.bMul_Click);
             // 
             // bDiv
             // 
@@ -106,6 +107,7 @@
             this.bDiv.TabIndex = 0;
             this.bDiv.Text = "/";
             this.bDiv.UseVisualStyleBackColor = true;
+            this.bDiv.Click += new System.EventHandler(this.bDiv_Click);
             // 
             // bNum2
             // 
@@ -145,6 +147,7 @@
             this.bEnter.TabIndex = 0;
             this.bEnter.Text = "Enter";
             this.bEnter.UseVisualStyleBackColor = true;
+            this.bEnter.Click += new System.EventHandler(this.bEnter_Click);
             // 
             // bPlu
             // 
@@ -154,6 +157,7 @@
             this.bPlu.TabIndex = 0;
             this.bPlu.Text = "+";
             this.bPlu.UseVisualStyleBackColor = true;
+            this.bPlu.Click += new System.EventHandler(this.bPlu_Click);
             // 
             // bMin
             // 
@@ -163,6 +167,7 @@
             this.bMin.TabIndex = 0;
             this.bMin.Text = "-";
             this.bMin.UseVisualStyleBackColor = true;
+            this.bMin.Click += new System.EventHandler(this.bMin_Click);
             // 
             // bNum
             // 
@@ -182,6 +187,7 @@
             this.bDot.TabIndex = 0;
             this.bDot.Text = ".";
             this.bDot.UseVisualStyleBackColor = true;
+            this.bDot.Click += new System.EventHandler(this.bDot_Click);
             // 
             // bSign
             // 
@@ -230,6 +236,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(338, 47);
             this.textBox1.TabIndex = 1;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Calculator
             // 
