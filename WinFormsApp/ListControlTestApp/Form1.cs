@@ -30,7 +30,7 @@ namespace ListControlTestApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(listBox1.SelectedIndex > -1)
+            if(listBox1.SelectedIndex > -1) -- 아무것도 선택안한 값
             {
                 listBox1.Items.RemoveAt(listBox1.SelectedIndex);
                 comboBox1.Items.RemoveAt(comboBox1.SelectedIndex);

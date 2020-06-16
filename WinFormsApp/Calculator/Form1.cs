@@ -27,7 +27,7 @@ namespace Calculator
 
         private void bNum1_Click(object sender, EventArgs e)
         {
-            label1.Text = (x + 1).ToString();
+            label1.Text = $"1";
         }
 
         private void label1_Click(object sender, EventArgs e)
