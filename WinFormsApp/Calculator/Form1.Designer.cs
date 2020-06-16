@@ -43,12 +43,15 @@
             this.bNum = new System.Windows.Forms.Button();
             this.bDot = new System.Windows.Forms.Button();
             this.bSign = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.bNum8 = new System.Windows.Forms.Button();
+            this.bNum9 = new System.Windows.Forms.Button();
+            this.bNum7 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bNum1
             // 
-            this.bNum1.Location = new System.Drawing.Point(11, 304);
+            this.bNum1.Location = new System.Drawing.Point(11, 365);
             this.bNum1.Name = "bNum1";
             this.bNum1.Size = new System.Drawing.Size(80, 80);
             this.bNum1.TabIndex = 0;
@@ -58,18 +61,19 @@
             // 
             // bNum3
             // 
-            this.bNum3.Location = new System.Drawing.Point(183, 304);
+            this.bNum3.Location = new System.Drawing.Point(183, 365);
             this.bNum3.Name = "bNum3";
             this.bNum3.Size = new System.Drawing.Size(80, 80);
             this.bNum3.TabIndex = 0;
             this.bNum3.Text = "3";
             this.bNum3.UseVisualStyleBackColor = true;
+            this.bNum3.Click += new System.EventHandler(this.bNum3_Click);
             // 
             // bClear
             // 
-            this.bClear.Location = new System.Drawing.Point(11, 132);
+            this.bClear.Location = new System.Drawing.Point(11, 107);
             this.bClear.Name = "bClear";
-            this.bClear.Size = new System.Drawing.Size(80, 80);
+            this.bClear.Size = new System.Drawing.Size(164, 80);
             this.bClear.TabIndex = 0;
             this.bClear.Text = "C";
             this.bClear.UseVisualStyleBackColor = true;
@@ -77,16 +81,17 @@
             // 
             // bNum5
             // 
-            this.bNum5.Location = new System.Drawing.Point(97, 218);
+            this.bNum5.Location = new System.Drawing.Point(97, 279);
             this.bNum5.Name = "bNum5";
             this.bNum5.Size = new System.Drawing.Size(80, 80);
             this.bNum5.TabIndex = 0;
             this.bNum5.Text = "5";
             this.bNum5.UseVisualStyleBackColor = true;
+            this.bNum5.Click += new System.EventHandler(this.bNum5_Click);
             // 
             // bMul
             // 
-            this.bMul.Location = new System.Drawing.Point(183, 132);
+            this.bMul.Location = new System.Drawing.Point(183, 107);
             this.bMul.Name = "bMul";
             this.bMul.Size = new System.Drawing.Size(80, 80);
             this.bMul.TabIndex = 0;
@@ -95,7 +100,7 @@
             // 
             // bDiv
             // 
-            this.bDiv.Location = new System.Drawing.Point(97, 132);
+            this.bDiv.Location = new System.Drawing.Point(269, 107);
             this.bDiv.Name = "bDiv";
             this.bDiv.Size = new System.Drawing.Size(80, 80);
             this.bDiv.TabIndex = 0;
@@ -104,34 +109,37 @@
             // 
             // bNum2
             // 
-            this.bNum2.Location = new System.Drawing.Point(97, 304);
+            this.bNum2.Location = new System.Drawing.Point(97, 365);
             this.bNum2.Name = "bNum2";
             this.bNum2.Size = new System.Drawing.Size(80, 80);
             this.bNum2.TabIndex = 0;
             this.bNum2.Text = "2";
             this.bNum2.UseVisualStyleBackColor = true;
+            this.bNum2.Click += new System.EventHandler(this.bNum2_Click);
             // 
             // bNum4
             // 
-            this.bNum4.Location = new System.Drawing.Point(11, 218);
+            this.bNum4.Location = new System.Drawing.Point(11, 279);
             this.bNum4.Name = "bNum4";
             this.bNum4.Size = new System.Drawing.Size(80, 80);
             this.bNum4.TabIndex = 0;
             this.bNum4.Text = "4";
             this.bNum4.UseVisualStyleBackColor = true;
+            this.bNum4.Click += new System.EventHandler(this.bNum4_Click);
             // 
             // bNum6
             // 
-            this.bNum6.Location = new System.Drawing.Point(183, 218);
+            this.bNum6.Location = new System.Drawing.Point(183, 279);
             this.bNum6.Name = "bNum6";
             this.bNum6.Size = new System.Drawing.Size(80, 80);
             this.bNum6.TabIndex = 0;
             this.bNum6.Text = "6";
             this.bNum6.UseVisualStyleBackColor = true;
+            this.bNum6.Click += new System.EventHandler(this.bNum6_Click);
             // 
             // bEnter
             // 
-            this.bEnter.Location = new System.Drawing.Point(269, 304);
+            this.bEnter.Location = new System.Drawing.Point(269, 365);
             this.bEnter.Name = "bEnter";
             this.bEnter.Size = new System.Drawing.Size(80, 166);
             this.bEnter.TabIndex = 0;
@@ -140,7 +148,7 @@
             // 
             // bPlu
             // 
-            this.bPlu.Location = new System.Drawing.Point(269, 218);
+            this.bPlu.Location = new System.Drawing.Point(269, 279);
             this.bPlu.Name = "bPlu";
             this.bPlu.Size = new System.Drawing.Size(80, 80);
             this.bPlu.TabIndex = 0;
@@ -149,7 +157,7 @@
             // 
             // bMin
             // 
-            this.bMin.Location = new System.Drawing.Point(269, 132);
+            this.bMin.Location = new System.Drawing.Point(269, 193);
             this.bMin.Name = "bMin";
             this.bMin.Size = new System.Drawing.Size(80, 80);
             this.bMin.TabIndex = 0;
@@ -158,16 +166,17 @@
             // 
             // bNum
             // 
-            this.bNum.Location = new System.Drawing.Point(97, 390);
+            this.bNum.Location = new System.Drawing.Point(97, 451);
             this.bNum.Name = "bNum";
             this.bNum.Size = new System.Drawing.Size(80, 80);
             this.bNum.TabIndex = 0;
             this.bNum.Text = "0";
             this.bNum.UseVisualStyleBackColor = true;
+            this.bNum.Click += new System.EventHandler(this.bNum_Click);
             // 
             // bDot
             // 
-            this.bDot.Location = new System.Drawing.Point(183, 390);
+            this.bDot.Location = new System.Drawing.Point(183, 451);
             this.bDot.Name = "bDot";
             this.bDot.Size = new System.Drawing.Size(80, 80);
             this.bDot.TabIndex = 0;
@@ -176,7 +185,7 @@
             // 
             // bSign
             // 
-            this.bSign.Location = new System.Drawing.Point(12, 390);
+            this.bSign.Location = new System.Drawing.Point(12, 451);
             this.bSign.Name = "bSign";
             this.bSign.Size = new System.Drawing.Size(80, 80);
             this.bSign.TabIndex = 0;
@@ -184,27 +193,56 @@
             this.bSign.UseVisualStyleBackColor = true;
             this.bSign.Click += new System.EventHandler(this.bNum1_Click);
             // 
-            // label1
+            // bNum8
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Font = new System.Drawing.Font("굴림", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(11, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 72);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "0";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.bNum8.Location = new System.Drawing.Point(95, 193);
+            this.bNum8.Name = "bNum8";
+            this.bNum8.Size = new System.Drawing.Size(80, 80);
+            this.bNum8.TabIndex = 0;
+            this.bNum8.Text = "8";
+            this.bNum8.UseVisualStyleBackColor = true;
+            this.bNum8.Click += new System.EventHandler(this.bNum8_Click);
+            // 
+            // bNum9
+            // 
+            this.bNum9.Location = new System.Drawing.Point(181, 193);
+            this.bNum9.Name = "bNum9";
+            this.bNum9.Size = new System.Drawing.Size(80, 80);
+            this.bNum9.TabIndex = 0;
+            this.bNum9.Text = "9";
+            this.bNum9.UseVisualStyleBackColor = true;
+            this.bNum9.Click += new System.EventHandler(this.bNum9_Click);
+            // 
+            // bNum7
+            // 
+            this.bNum7.Location = new System.Drawing.Point(11, 193);
+            this.bNum7.Name = "bNum7";
+            this.bNum7.Size = new System.Drawing.Size(80, 80);
+            this.bNum7.TabIndex = 0;
+            this.bNum7.Text = "7";
+            this.bNum7.UseVisualStyleBackColor = true;
+            this.bNum7.Click += new System.EventHandler(this.bNum7_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("나눔고딕코딩", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Location = new System.Drawing.Point(11, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(338, 47);
+            this.textBox1.TabIndex = 1;
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 482);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(359, 543);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.bNum6);
             this.Controls.Add(this.bPlu);
+            this.Controls.Add(this.bNum9);
             this.Controls.Add(this.bMin);
+            this.Controls.Add(this.bNum7);
+            this.Controls.Add(this.bNum8);
             this.Controls.Add(this.bMul);
             this.Controls.Add(this.bDiv);
             this.Controls.Add(this.bNum);
@@ -220,6 +258,7 @@
             this.Name = "Calculator";
             this.Text = "Calculator";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -240,7 +279,10 @@
         private System.Windows.Forms.Button bNum;
         private System.Windows.Forms.Button bDot;
         private System.Windows.Forms.Button bSign;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button bNum8;
+        private System.Windows.Forms.Button bNum9;
+        private System.Windows.Forms.Button bNum7;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
