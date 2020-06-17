@@ -20,5 +20,37 @@ namespace MainMenuApp
         {
 
         }
+
+        private void MNnewFile_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += MNnewFile.Text + Environment.NewLine;
+            //실제 새파일 로직
+        }
+
+        private void 열기OToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += 열기OToolStripMenuItem.Text + Environment.NewLine;
+
+        }
+
+        private void 저장SToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Text += 저장SToolStripMenuItem.Text + Environment.NewLine;
+            MessageBox.Show("저장했습니다.");
+        }
+
+        private void 프로그램정보AToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox aboutBox = new AboutBox();
+            aboutBox.ShowDialog();
+        }
+
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+                contextMenuStrip1.Show(e.Location);
+            }
+        }
     }
 }

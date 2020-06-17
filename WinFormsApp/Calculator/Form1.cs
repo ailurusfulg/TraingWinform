@@ -1,13 +1,11 @@
 ﻿using System;
-using System.ComponentModel;
-using System.Runtime;
 using System.Windows.Forms;
 
 namespace Calculator
 {
     public partial class Calculator : Form
     {
-        double FirstNumber;
+        double Number_UN;
         string Operation;
         public Calculator()
         {
@@ -134,58 +132,58 @@ namespace Calculator
 
         private void bPlu_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
+            Number_UN = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "";
             Operation = "+";
         }
         private void bMin_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
+            Number_UN = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "";
             Operation = "-";
 
         }
         private void bMul_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
+            Number_UN = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "";
             Operation = "*";
         }
         private void bDiv_Click(object sender, EventArgs e)
         {
-            FirstNumber = Convert.ToDouble(textBox1.Text);
+            Number_UN = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "";
             Operation = "/";
         }
 
         private void bEnter_Click(object sender, EventArgs e)
         {
-            double SecondNumber;
+            double Number_Deux;
             double Result;
 
-            SecondNumber = Convert.ToDouble(textBox1.Text);
+            Number_Deux = Convert.ToDouble(textBox1.Text);
 
             if (Operation == "+")
             {
-                Result = (FirstNumber + SecondNumber);
+                Result = (Number_UN + Number_Deux);
                 textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
+                Number_UN = Result;
             }
             if (Operation == "-")
             {
-                Result = (FirstNumber - SecondNumber);
+                Result = (Number_UN - Number_Deux);
                 textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
+                Number_UN = Result;
             }
             if (Operation == "*")
             {
-                Result = (FirstNumber * SecondNumber);
+                Result = (Number_UN * Number_Deux);
                 textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
+                Number_UN = Result;
             }
             if (Operation == "/")
             {
-                if (SecondNumber == 0)
+                if (Number_Deux == 0)
                 {
                     float size = textBox1.Font.Size;
                     size = 18;
@@ -193,9 +191,9 @@ namespace Calculator
                 }
                 else
                 {
-                    Result = (FirstNumber / SecondNumber);
+                    Result = (Number_UN / Number_Deux);
                     textBox1.Text = Convert.ToString(Result);
-                    FirstNumber = Result;
+                    Number_UN = Result;
                 }
             }
         }
