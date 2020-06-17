@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFileDialogApp", "TestAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainMenuApp", "MainMenuApp\MainMenuApp.csproj", "{2C8225FD-5486-4A9F-884B-177EFABEEC1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxApp", "List\ListBoxApp.csproj", "{00F654A8-022D-4D7A-82E3-4391C6B942FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewApp", "WindowsFormsApp1\TreeViewApp.csproj", "{7BEBE590-0FEE-4361-8D33-5961007AC3DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{2C8225FD-5486-4A9F-884B-177EFABEEC1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C8225FD-5486-4A9F-884B-177EFABEEC1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C8225FD-5486-4A9F-884B-177EFABEEC1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00F654A8-022D-4D7A-82E3-4391C6B942FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F654A8-022D-4D7A-82E3-4391C6B942FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F654A8-022D-4D7A-82E3-4391C6B942FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F654A8-022D-4D7A-82E3-4391C6B942FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BEBE590-0FEE-4361-8D33-5961007AC3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BEBE590-0FEE-4361-8D33-5961007AC3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BEBE590-0FEE-4361-8D33-5961007AC3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BEBE590-0FEE-4361-8D33-5961007AC3DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
