@@ -52,5 +52,10 @@ namespace MainMenuApp
                 contextMenuStrip1.Show(e.Location);
             }
         }
+
+        private void textBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            LblMouseLocation.Text = $"(X,Y) = ({e.X}, {e.Y})";
+        }
     }
 }
