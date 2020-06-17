@@ -25,6 +25,7 @@ namespace MainMenuApp
         {
             textBox1.Text += MNnewFile.Text + Environment.NewLine;
             //실제 새파일 로직
+            toolStripStatusLabel1.Text = MNnewFile.Text;
         }
 
         private void 열기OToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +57,25 @@ namespace MainMenuApp
         private void textBox1_MouseMove(object sender, MouseEventArgs e)
         {
             LblMouseLocation.Text = $"(X,Y) = ({e.X}, {e.Y})";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void Form1_Activated(object sender, EventArgs e)
+        {
+            button1.Focus();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            MNnewFile_Click(sender, e);
         }
     }
 }
