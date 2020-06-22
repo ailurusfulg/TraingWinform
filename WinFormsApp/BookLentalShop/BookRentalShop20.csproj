@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F5E015DE-2E58-4F8C-B8B3-566A8F856FD1}</ProjectGuid>
+    <ProjectGuid>{8CC0758A-0324-4BA9-9229-56C3D76AE7B3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BookLentalShop20</RootNamespace>
-    <AssemblyName>BookLentalShop20</AssemblyName>
+    <RootNamespace>BookRentalShop20</RootNamespace>
+    <AssemblyName>BookRentalShop20</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -55,16 +55,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookLentalShopDBDataSet.Designer.cs">
+    <Compile Include="BookRentalshopDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BookLentalShopDBDataSet.xsd</DependentUpon>
+      <DependentUpon>BookRentalshopDBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Commons.cs" />
+    <Compile Include="BooksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksForm.Designer.cs">
+      <DependentUpon>BooksForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MemberForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MemberForm.designer.cs">
+    <Compile Include="MemberForm.Designer.cs">
       <DependentUpon>MemberForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UserForm.cs">
@@ -93,6 +99,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BooksForm.resx">
+      <DependentUpon>BooksForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MemberForm.resx">
       <DependentUpon>MemberForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,16 +126,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="BookLentalShopDBDataSet.xsc">
-      <DependentUpon>BookLentalShopDBDataSet.xsd</DependentUpon>
+    <None Include="BookRentalshopDBDataSet.xsc">
+      <DependentUpon>BookRentalshopDBDataSet.xsd</DependentUpon>
     </None>
-    <None Include="BookLentalShopDBDataSet.xsd">
+    <None Include="BookRentalshopDBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BookLentalShopDBDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>BookRentalshopDBDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BookLentalShopDBDataSet.xss">
-      <DependentUpon>BookLentalShopDBDataSet.xsd</DependentUpon>
+    <None Include="BookRentalshopDBDataSet.xss">
+      <DependentUpon>BookRentalshopDBDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

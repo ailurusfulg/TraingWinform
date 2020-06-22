@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace BookLentalShop20
+namespace BookRentalShop20
 {
     static class Program
     {

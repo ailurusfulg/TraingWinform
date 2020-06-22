@@ -1,4 +1,4 @@
-﻿namespace BookLentalShop20
+﻿namespace BookRentalShop20
 {
     partial class UserForm
     {
@@ -33,16 +33,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.GrdUserTbl = new MetroFramework.Controls.MetroGrid();
-            this.BtnCancel = new MetroFramework.Controls.MetroButton();
+            this.BtnCancle = new MetroFramework.Controls.MetroButton();
             this.BtnSave = new MetroFramework.Controls.MetroButton();
             this.BtnNew = new MetroFramework.Controls.MetroButton();
             this.BtnDelete = new MetroFramework.Controls.MetroButton();
-            this.LblID = new System.Windows.Forms.Label();
-            this.LblUserID = new System.Windows.Forms.Label();
-            this.LblPW = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtUserID = new System.Windows.Forms.TextBox();
-            this.txtPW = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TxtID = new System.Windows.Forms.TextBox();
+            this.TxtUserID = new System.Windows.Forms.TextBox();
+            this.TxtPassword = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -52,7 +52,8 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(23, 63);
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(20, 60);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -61,20 +62,19 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.txtPW);
-            this.splitContainer1.Panel2.Controls.Add(this.txtUserID);
-            this.splitContainer1.Panel2.Controls.Add(this.txtID);
-            this.splitContainer1.Panel2.Controls.Add(this.LblPW);
-            this.splitContainer1.Panel2.Controls.Add(this.LblUserID);
-            this.splitContainer1.Panel2.Controls.Add(this.LblID);
-            this.splitContainer1.Panel2.Controls.Add(this.BtnCancel);
+            this.splitContainer1.Panel2.Controls.Add(this.TxtPassword);
+            this.splitContainer1.Panel2.Controls.Add(this.TxtUserID);
+            this.splitContainer1.Panel2.Controls.Add(this.TxtID);
+            this.splitContainer1.Panel2.Controls.Add(this.label3);
+            this.splitContainer1.Panel2.Controls.Add(this.label2);
+            this.splitContainer1.Panel2.Controls.Add(this.label1);
+            this.splitContainer1.Panel2.Controls.Add(this.BtnCancle);
             this.splitContainer1.Panel2.Controls.Add(this.BtnSave);
             this.splitContainer1.Panel2.Controls.Add(this.BtnNew);
             this.splitContainer1.Panel2.Controls.Add(this.BtnDelete);
-            this.splitContainer1.Panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.splitContainer1.Size = new System.Drawing.Size(754, 364);
-            this.splitContainer1.SplitterDistance = 361;
-            this.splitContainer1.TabIndex = 2;
+            this.splitContainer1.Size = new System.Drawing.Size(760, 370);
+            this.splitContainer1.SplitterDistance = 374;
+            this.splitContainer1.TabIndex = 0;
             // 
             // GrdUserTbl
             // 
@@ -122,97 +122,98 @@
             this.GrdUserTbl.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GrdUserTbl.RowTemplate.Height = 27;
             this.GrdUserTbl.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.GrdUserTbl.Size = new System.Drawing.Size(361, 364);
+            this.GrdUserTbl.Size = new System.Drawing.Size(374, 370);
             this.GrdUserTbl.TabIndex = 0;
             this.GrdUserTbl.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdDivTbl_CellClick);
             // 
-            // BtnCancel
+            // BtnCancle
             // 
-            this.BtnCancel.Location = new System.Drawing.Point(293, 126);
-            this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(70, 22);
-            this.BtnCancel.TabIndex = 6;
-            this.BtnCancel.Text = "취소";
-            this.BtnCancel.UseSelectable = true;
+            this.BtnCancle.Location = new System.Drawing.Point(275, 183);
+            this.BtnCancle.Name = "BtnCancle";
+            this.BtnCancle.Size = new System.Drawing.Size(75, 23);
+            this.BtnCancle.TabIndex = 6;
+            this.BtnCancle.Text = "Cancle";
+            this.BtnCancle.UseSelectable = true;
             // 
             // BtnSave
             // 
-            this.BtnSave.Location = new System.Drawing.Point(207, 126);
+            this.BtnSave.Location = new System.Drawing.Point(194, 183);
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(70, 22);
+            this.BtnSave.Size = new System.Drawing.Size(75, 23);
             this.BtnSave.TabIndex = 5;
-            this.BtnSave.Text = "저장";
+            this.BtnSave.Text = "Save";
             this.BtnSave.UseSelectable = true;
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // BtnNew
             // 
-            this.BtnNew.Location = new System.Drawing.Point(119, 126);
+            this.BtnNew.Location = new System.Drawing.Point(113, 183);
             this.BtnNew.Name = "BtnNew";
-            this.BtnNew.Size = new System.Drawing.Size(70, 22);
+            this.BtnNew.Size = new System.Drawing.Size(75, 23);
             this.BtnNew.TabIndex = 4;
-            this.BtnNew.Text = "신규";
+            this.BtnNew.Text = "New";
             this.BtnNew.UseSelectable = true;
             this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
             // 
             // BtnDelete
             // 
-            this.BtnDelete.Location = new System.Drawing.Point(33, 126);
+            this.BtnDelete.Location = new System.Drawing.Point(32, 183);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(70, 22);
+            this.BtnDelete.Size = new System.Drawing.Size(75, 23);
             this.BtnDelete.TabIndex = 3;
-            this.BtnDelete.Text = "삭제";
+            this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseSelectable = true;
             this.BtnDelete.Visible = false;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
-            // LblID
+            // label1
             // 
-            this.LblID.AutoSize = true;
-            this.LblID.Location = new System.Drawing.Point(25, 25);
-            this.LblID.Name = "LblID";
-            this.LblID.Size = new System.Drawing.Size(37, 15);
-            this.LblID.TabIndex = 6;
-            this.LblID.Text = "순번";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Number";
             // 
-            // LblUserID
+            // label2
             // 
-            this.LblUserID.AutoSize = true;
-            this.LblUserID.Location = new System.Drawing.Point(25, 59);
-            this.LblUserID.Name = "LblUserID";
-            this.LblUserID.Size = new System.Drawing.Size(52, 15);
-            this.LblUserID.TabIndex = 7;
-            this.LblUserID.Text = "아이디";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(65, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(20, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "ID";
             // 
-            // LblPW
+            // label3
             // 
-            this.LblPW.AutoSize = true;
-            this.LblPW.Location = new System.Drawing.Point(25, 94);
-            this.LblPW.Name = "LblPW";
-            this.LblPW.Size = new System.Drawing.Size(67, 15);
-            this.LblPW.TabIndex = 8;
-            this.LblPW.Text = "패스워드";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 15);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Password";
             // 
-            // txtID
+            // TxtID
             // 
-            this.txtID.Location = new System.Drawing.Point(104, 22);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(259, 25);
-            this.txtID.TabIndex = 0;
+            this.TxtID.Location = new System.Drawing.Point(91, 23);
+            this.TxtID.Name = "TxtID";
+            this.TxtID.ReadOnly = true;
+            this.TxtID.Size = new System.Drawing.Size(259, 25);
+            this.TxtID.TabIndex = 0;
             // 
-            // txtUserID
+            // TxtUserID
             // 
-            this.txtUserID.Location = new System.Drawing.Point(104, 56);
-            this.txtUserID.Name = "txtUserID";
-            this.txtUserID.Size = new System.Drawing.Size(259, 25);
-            this.txtUserID.TabIndex = 1;
+            this.TxtUserID.Location = new System.Drawing.Point(91, 59);
+            this.TxtUserID.Name = "TxtUserID";
+            this.TxtUserID.Size = new System.Drawing.Size(259, 25);
+            this.TxtUserID.TabIndex = 1;
             // 
-            // txtPW
+            // TxtPassword
             // 
-            this.txtPW.Location = new System.Drawing.Point(104, 91);
-            this.txtPW.Name = "txtPW";
-            this.txtPW.Size = new System.Drawing.Size(259, 25);
-            this.txtPW.TabIndex = 2;
+            this.TxtPassword.Location = new System.Drawing.Point(91, 96);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(259, 25);
+            this.TxtPassword.TabIndex = 2;
             // 
             // UserForm
             // 
@@ -222,7 +223,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "UserForm";
             this.Text = "UserForm";
-            this.Load += new System.EventHandler(this.UserForm_Load);
+            this.Load += new System.EventHandler(this.DivForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
@@ -234,17 +235,18 @@
         }
 
         #endregion
+
         private System.Windows.Forms.SplitContainer splitContainer1;
         private MetroFramework.Controls.MetroGrid GrdUserTbl;
-        private MetroFramework.Controls.MetroButton BtnCancel;
+        private MetroFramework.Controls.MetroButton BtnCancle;
         private MetroFramework.Controls.MetroButton BtnSave;
         private MetroFramework.Controls.MetroButton BtnNew;
         private MetroFramework.Controls.MetroButton BtnDelete;
-        private System.Windows.Forms.TextBox txtPW;
-        private System.Windows.Forms.TextBox txtUserID;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label LblPW;
-        private System.Windows.Forms.Label LblUserID;
-        private System.Windows.Forms.Label LblID;
+        private System.Windows.Forms.TextBox TxtPassword;
+        private System.Windows.Forms.TextBox TxtUserID;
+        private System.Windows.Forms.TextBox TxtID;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

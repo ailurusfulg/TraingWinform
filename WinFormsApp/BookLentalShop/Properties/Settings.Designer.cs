@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BookLentalShop20.Properties {
+namespace BookRentalShop20.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -26,11 +26,11 @@ namespace BookLentalShop20.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.0.63;Initial Catalog=BookLentalShopDB;Persist Security Info=T" +
-            "rue;User ID=sa;Password=p@ssw0rd!")]
-        public string BookLentalShopDBConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=127.0.0.1;Initial Catalog=BookRentalshopDB;Persist Security Info=True" +
+            ";User ID=sa;Password=p@ssw0rd!")]
+        public string BookRentalshopDBConnectionString {
             get {
-                return ((string)(this["BookLentalShopDBConnectionString"]));
+                return ((string)(this["BookRentalshopDBConnectionString"]));
             }
         }
     }
