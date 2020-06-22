@@ -14,7 +14,7 @@ namespace LoginApp
         {
             textBox3.Text = $"ID : { textBox1.Text} \r\nPASSWORD : { textBox2.Text}";
 
-            if((textBox1.Text.ToUpper() == "ADMIN") && (textBox2.Text.ToUpper() == "P@SSW0RD!"))
+            if ((textBox1.Text.ToUpper() == "ADMIN") && (textBox2.Text.ToUpper() == "P@SSW0RD!"))
             {
                 MessageBox.Show("관리자 로그인!!");
             }

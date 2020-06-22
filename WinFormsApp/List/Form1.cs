@@ -13,7 +13,7 @@ namespace List
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch(comboBox1.SelectedIndex)
+            switch (comboBox1.SelectedIndex)
             {
                 case 0: // LargeIcon
                     listView1.View = View.LargeIcon;
@@ -35,7 +35,7 @@ namespace List
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            foreach(ListViewItem item in listView1.SelectedItems)
+            foreach (ListViewItem item in listView1.SelectedItems)
             {
                 ListViewSubItemCollection subItem = item.SubItems;
                 label1.Text = $"{item.Text} 의 국가번호는 {subItem[1].Text}";

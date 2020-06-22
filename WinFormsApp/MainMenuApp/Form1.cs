@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MainMenuApp
@@ -48,7 +41,7 @@ namespace MainMenuApp
 
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Right)
+            if (e.Button == MouseButtons.Right)
             {
                 contextMenuStrip1.Show(e.Location);
             }

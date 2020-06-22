@@ -30,7 +30,7 @@ namespace TestApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 BackColor = colorDialog1.Color;
             }
@@ -38,7 +38,7 @@ namespace TestApp
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if(colorDialog1.ShowDialog() == DialogResult.OK)
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 button3.BackColor = colorDialog1.Color;
             }
